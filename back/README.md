@@ -1,5 +1,6 @@
-# RESTful API WAS
+# 1. Backend
 
+## RESTful API
 ### INFO
 - IDE : Intellij
 - JAVA version : 21

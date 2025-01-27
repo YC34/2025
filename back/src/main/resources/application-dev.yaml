@@ -1,0 +1,22 @@
+# 개발용 yaml
+server:
+    port: 50000
+spring:
+   datasource:
+        url: jdbc:postgresql://0.0.0.0:5432/blog-app
+        username: postgres
+        password: postgres
+
+# swagger api를 활용한 자동 문서화.
+springdoc:
+  swagger-ui:
+    path: /api-docs                # 경로
+    operationsSorter: alpha        # API 목록을 알파벳 순으로 정렬
+    tagsSorter: alpha              # 태그를 알파벳 순으로 정렬
+    displayOperationId: true       # API Operation ID 표시
+    deepLinking: true              # API 문서 링크가 깊이 연결되도록 설정
+    doc-expansion: none            # 기본적으로 문서를 펼치지 않음
+    defaultModelsExpandDepth: 1    # 모델 세부 정보 펼침 깊이 설정
+
+  api-docs:
+    path: /v1/json-docs
