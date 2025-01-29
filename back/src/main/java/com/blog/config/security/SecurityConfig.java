@@ -19,7 +19,7 @@ public class SecurityConfig {
     // 허용가능한 url명시
     // TODO api 명세나 조회 요청시, token 발급 받아 허용할 수 있도록 수정.
     // TODO swagger(openapi docs)가 path를 설정해 주어도, 기본 index.html로 path가 변경됨 이 부분 설정 필요함.
-    private final String [] allowURLs = {"/test/**","/openapi-docs","/v1/json-docs"};
+    private final String [] allowURLs = new String[]{"/test/**", "/openapi-docs", "/v1/json-docs"};
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http, DispatcherServlet dispatcherServlet) throws Exception{
@@ -34,6 +34,7 @@ public class SecurityConfig {
                         (auth) ->{
                            auth
                                    .requestMatchers(allowURLs).permitAll()
+                                   .requestMatchers("/v1/api/auth/sign-up").permitAll()
                                    .anyRequest().authenticated();
                         });
         // session 상태를 유지하지 않음.
