@@ -3,4 +3,3 @@ spring:
         name: blog-app
     profiles:
         active: dev
-

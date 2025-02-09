@@ -8,9 +8,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/test")
 @Slf4j
 public class TestController {
+    /**
+     *
+     * @author pyc
+     * @since 2025.01.27
+     * @description 설정 테스트를 위한 controller, security disable
+     *
+     * **/
 
     // GET 요청 처리
     @GetMapping

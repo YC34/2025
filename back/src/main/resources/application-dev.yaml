@@ -10,7 +10,7 @@ spring:
 # swagger api를 활용한 자동 문서화.
 springdoc:
   swagger-ui:
-    path: /api-docs                # 경로
+    path: /openapi-docs                # 경로
     operationsSorter: alpha        # API 목록을 알파벳 순으로 정렬
     tagsSorter: alpha              # 태그를 알파벳 순으로 정렬
     displayOperationId: true       # API Operation ID 표시
