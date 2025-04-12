@@ -1,3 +1,10 @@
 spring:
   application:
     name: Auth service
+
+# db connection info
+  datasource:
+    url: jdbc:postgresql://192.168.0.10:5432/auth  # 도커에서 포워딩된 포트 기준
+    username: master
+    password: master
+    driver-class-name: org.postgresql.Driver
