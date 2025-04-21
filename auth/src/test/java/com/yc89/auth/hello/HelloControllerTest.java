@@ -1,4 +1,4 @@
-package com.yc89.auth.test;
+package com.yc89.auth.hello;
 
 
 import org.junit.jupiter.api.Test;
@@ -7,9 +7,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.assertj.MockMvcTester;
 
+
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
-@WebMvcTest(controllers = HelloController.class)
+@WebMvcTest(controllers = com.yc89.auth.hello.HelloController.class)
 @WithMockUser
 public class HelloControllerTest {
 

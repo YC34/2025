@@ -1,4 +1,4 @@
-package com.yc89.auth.test;
+package com.yc89.auth.hello;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
