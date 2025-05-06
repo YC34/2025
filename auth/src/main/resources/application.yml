@@ -8,3 +8,16 @@ spring:
     username: master
     password: master
     driver-class-name: org.postgresql.Driver
+
+
+
+# Spring Security logging
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+#    com:
+#      yc89:
+#        auth:
+#          config: trace
